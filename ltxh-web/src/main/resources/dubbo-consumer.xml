@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+                        http://www.springframework.org/schema/mvc  
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd 
+                        http://code.alibabatech.com/schema/dubbo 
+                        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<dubbo:reference id="userService" interface="com.agc.dubbo.service.user.UserService" />
+
+	<dubbo:reference id="areaService" interface="com.agc.dubbo.service.area.AreaService" />
+
+	<dubbo:reference id="feedbackService" interface="com.agc.dubbo.service.feedback.FeedBackService" />
+
+	<dubbo:reference id="goodsService" interface="com.agc.dubbo.service.goods.GoodsService" />
+
+	<dubbo:reference id="newsService" interface="com.agc.dubbo.service.news.NewsService" />
+
+	<dubbo:reference id="platNewsService" interface="com.agc.dubbo.service.platnews.PlatNewsService" />
+
+	<dubbo:reference id="questionService" interface="com.agc.dubbo.service.question.QuestionService" />
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+                        http://www.springframework.org/schema/mvc  
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd 
+                        http://code.alibabatech.com/schema/dubbo 
+                        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- 服务名称 -->
+	<dubbo:application name="${dubbo.app.name}" />
+
+	<!-- 注册中心 -->
+	<dubbo:registry protocol="${dubbo.reg.protocol}" address="${dubbo.reg.address}"
+		check="false" />
+
+	<!-- 协议 serialization -->
+	<dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
+
+	<!-- 服务者与消费者的默认配置 -->
+	<!-- 延迟到Spring初始化完成后，再暴露服务,服务调用超时设置为6秒 -->
+	<dubbo:provider delay="${dubbo.provider.delay}" timeout="${dubbo.provider.timeout}" retries="${dubbo.provider.retries}" />
+	<dubbo:consumer timeout="${dubbo.consumer.timeout}" retries="0" check="false" />
+	<!-- 配置Dubbo缓存文件 <dubbo:registryfile=”${user.home}/output/dubbo.cache” /> -->
+	<import resource="dubbo-consumer.xml" />
+
+</beans>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ltxh-api/ltxh-api.iml" filepath="$PROJECT_DIR$/ltxh-api/ltxh-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltxh-core/ltxh-core.iml" filepath="$PROJECT_DIR$/ltxh-core/ltxh-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltxh-demo/ltxh-demo.iml" filepath="$PROJECT_DIR$/ltxh-demo/ltxh-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltxh-parent.iml" filepath="$PROJECT_DIR$/ltxh-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltxh-user/ltxh-user.iml" filepath="$PROJECT_DIR$/ltxh-user/ltxh-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltxh-api/ltxh-user-api/ltxh-user-api.iml" filepath="$PROJECT_DIR$/ltxh-api/ltxh-user-api/ltxh-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltxh-web/ltxh-web.iml" filepath="$PROJECT_DIR$/ltxh-web/ltxh-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltxh-worker/ltxh-worker.iml" filepath="$PROJECT_DIR$/ltxh-worker/ltxh-worker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltxh-api/ltxh-worker-api/ltxh-worker-api.iml" filepath="$PROJECT_DIR$/ltxh-api/ltxh-worker-api/ltxh-worker-api.iml" />
+    </modules>
+  </component>
+</project>

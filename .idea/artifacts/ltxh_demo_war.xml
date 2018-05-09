@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ltxh-demo:war">
+    <output-path>$PROJECT_DIR$/ltxh-demo/target</output-path>
+    <root id="archive" name="ltxh-demo-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ltxh-demo:war exploded" />
+    </root>
+  </artifact>
+</component>

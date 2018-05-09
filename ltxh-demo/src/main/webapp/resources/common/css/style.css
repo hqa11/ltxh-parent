@@ -1,0 +1,594 @@
+@charset "utf-8";
+/*
+ *农牧人平台管理系统-公共标签
+ */
+/*字体样式*/
+@font-face{
+	font-family: wryh;
+	src: url('../font/wryh.ttf'),
+	     url('../font/wryh.eot'); /* IE9+ */
+	font-weight:normal;
+}
+form{
+	display:block
+}
+div{
+	font-family: wryh;
+}
+.min-width{
+	min-width: 1440px;
+}
+.font-write{
+	color: #FFFFFF;
+}
+.table-menu td{
+	font-size: 14px;
+}
+.font-w100{
+	font-weight: 100;
+}
+.thumbImage{
+	padding: 1px;
+}
+.icon-no{
+	background: url(../images/icon_error_s.png) no-repeat center center;
+}
+.icon-yes{
+	background: url(../images/icon_right_s.png) no-repeat center center;
+}
+.layui-layer-custom{
+	padding: 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+.bt-dashed{
+	border-top: 1px dashed #eee;
+}
+.h500{
+	width: 100%;
+	height: 500px;
+	overflow-y: auto;
+}
+.h{
+	height: 100%;
+}
+.br-none{
+	border: none;
+}
+/*
+ * 树形菜单style
+ */
+div.content_wrap {
+	width: 600px;
+	height: 380px;
+}
+
+div.content_wrap div.left {
+	float: left;
+	width: 250px;
+}
+
+div.content_wrap div.right {
+	float: right;
+	width: 340px;
+}
+
+div.zTreeDemoBackground {
+	width: 250px;
+	height: 362px;
+	text-align: left;
+}
+ul.ztree {
+	margin-top: 10px;
+	border: 1px solid #617775;
+	background: #f0f6e4;
+	width: 220px;
+	height: 360px;
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+
+/*
+ * 提交按钮style
+ */
+button[type=submit],button[type=button]{
+	width: 120px;
+	height: 40px;
+}
+/*
+ *资讯图片
+ */
+.img-upload-box{
+	display: inline-block;
+    overflow: hidden;
+    border: 1px solid #F5F5F5;
+    padding: 1px;
+}
+.img-upload{
+	display: inline-block;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    border: 1px solid #F5F5F5;
+    padding: 1px;
+}
+.img-upload img,.img-upload-box img{
+	width: 100%;
+}
+/*
+ * 背景颜色
+ */
+.bg-color-white{
+	background-color:#FFFFFF;
+}
+.bg-color-lightGreen{
+	background-color:#90EE90;
+}
+.bg-color-green{
+	background-color:#008000;
+}
+.bg-color-lightYellow{
+	background-color:#FFFFE0;
+}
+.bg-color-darkKhaki{
+	background-color:#BDB76B;
+}
+.bg-color-orange{
+	background-color:#FFA500;
+}
+.bg-color-lightSeaGreen{
+	background-color:#20B2AA;
+}
+.bg-color-turquoise{
+	background-color:#40E0D0;
+}
+.bg-color-orchid{
+	background-color:#DA70D6;
+}
+.bg-color-hotPink{
+	background-color:#FF69B4;
+}
+.bg-color-mediumPurple{
+	background-color:#9370DB;
+}
+.bg-color-f5fafe{
+	background-color:#f5fafe;
+}
+.bg-color-gray{
+	background-color:#F2F2F2;
+}
+.bg-color-lightgray{
+	background-color:#FCFCFC;
+}
+/*
+ * 商家店铺
+ */
+.shop-circle{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*
+ * 意见反馈
+ */
+.feedback-img{
+	width: 100px;
+	height: 100px;
+	padding: 2px;
+	border: 1px solid #E5E5E5;
+	overflow: hidden;
+	float: left;
+	margin-right: 15px;
+}
+.feedback-img img{
+	width: 100%;
+}
+
+/*
+ * 营销与活动
+ */
+.pattern.size-S,.pattern.size-S img{
+	width: 200px;
+	height: 100px;
+}
+.pattern.size-xs,.pattern.size-xs img{
+	width: 100;
+	height: 50px;
+}
+.help-tip{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/tip.png);
+	background-position: 3px center;
+	background-repeat: no-repeat;
+	background-size: 17px 17px;
+	vertical-align: bottom;
+	cursor: pointer;
+	position: absolute;
+}
+.help-tip img{
+	box-shadow:0px 0px 8px #555555;
+	-moz-box-shadow:0px 0px 8px #555555;
+	position: absolute;
+	left: 20px;
+	width: 500px;
+}
+.help-tip:hover img{
+	display: block;
+	transform-origin: 100% 0%;
+	-webkit-animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn 0.3s ease-in-out;
+}
+.help-tip i{
+	box-shadow:0px 0px 4px #009900;
+	-moz-box-shadow:0px 0px 4px #009900;
+	border: 1px solid #009900;
+	font-style: normal;
+	position: absolute;
+	left: 0px;
+	top: 25px;
+	width: 200px;
+	padding: 5px;
+}
+.help-tip:hover i{
+	display: block;
+}
+.shop-star img{
+	width: 18px;
+	height: 18px;
+}
+/*
+ * 分页style
+ */
+.pager-box{
+	text-align: center;
+	margin-bottom: 50px;
+	}
+#pager ul.pages {
+	display:block;
+	border:none;
+	text-transform:uppercase;
+	font-size:10px;
+	margin-top: 20px;
+	margin-left: 35%;
+}
+
+#pager ul.pages li {
+	list-style:none;
+	float:left;
+	border: 1px #CCC solid;
+	height: 30px;
+	line-height: 30px;
+	min-width: 30px;
+	margin: 5px;
+}
+
+#pager ul.pages li:hover {
+	border:1px solid #32A327;
+}
+
+#pager ul.pages li.pgEmpty {
+	border:1px solid #EEEEEE;
+	color:#CCCCCC;
+}
+#pager ul.pages li.pgNext {
+	padding: 0px 5px;
+}
+
+#pager ul.pages li.pgCurrent {
+	color:#FFFFFF;
+	font-weight:700;
+	background-color:#429842;
+}
+
+/*商品详情*/
+.goods-abs{
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+}
+.goods-abs img{
+	max-width: 100%;
+}
+
+/*卖家账户结算*/
+#seller-account-sort .td-href a{
+	color: #00B83F;
+}
+
+/*交易订单管理-订单详情*/
+.order-info{
+	height: 280px;
+	width: 100%;
+}
+.oi-base{
+	margin-top: 8px;
+}
+.oi-base label{
+	width: 110px;
+}
+.oi-base .oi-name{
+	display: table-cell;
+}
+.oi-more{
+	float: right;
+	margin-top: -23px;
+}
+.oi-more-info{
+	padding: 5px;
+	width: 300px
+}
+.oi-more-info li{
+	display: block;
+}
+.oi-state-txt{
+	margin: 0px 20px;
+	padding: 20px 0px;
+	border-bottom: 1px solid #F2F2F2;
+	font-size: 16px;
+	background-image: url(../images/dingdanzhuangtai.png);
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	background-size: 32px;
+	text-indent: 80px;
+}
+.oi-info-txt{
+	padding: 15px 40px;
+}
+.order-state-title{
+	height: 150px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size:auto;
+}
+.order-state-title.st1{
+	background-image: url(../images/liuchengtu1.png);
+}
+.order-state-title.st2{
+	background-image: url(../images/liuchengtu2.png);
+}
+.order-state-title.st3{
+	background-image: url(../images/liuchengtu3.png);
+}
+.order-state-title.st4{
+	background-image: url(../images/liuchengtu4.png);
+}
+.order-state-title.st5{
+	background-image: url(../images/liuchengtu5.png);
+}
+.order-state-title.g1{
+	background-image: url(../images/liucheng1.png);
+}
+.order-state-title.g2{
+	background-image: url(../images/liucheng2.png);
+}
+.order-state-title.g3{
+	background-image: url(../images/liucheng3.png);
+}
+.order-state-title.g4{
+	background-image: url(../images/liucheng4.png);
+}
+.order-state-title .os-date{
+	display: inline-block;
+	width: 184px;
+}
+.order-state-title .g-date{
+	display: inline-block;
+	width: 244px;
+}
+#order-detail-tb{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+/*#order-detail-tb th,#order-detail-tb td{
+	text-align: center;
+}*/
+.order-tot .ot-val{
+	float: right;
+	width: 120px;
+	text-align: left;
+	margin-left: 10px;
+}
+.oi-wl-info{
+	padding: 5px;
+	width: 500px;
+	margin-left: -250px;
+}
+.dropDown-reload .dropDown.open .dropDown-menu ul li{
+	display: block;
+}
+.dropDown-info span.name{
+	width: 25%;
+	float: left;
+}
+.dropDown-info span.dec{
+	display: table-cell;
+}
+.oi-name-info{
+	padding: 5px;
+	width: 300px;
+	margin-left: -260px;
+	margin-top: 5px;
+}
+
+.goods-recomm-icon{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/recomm-icon.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 17px 19px;
+}
+
+/*商品管理*/
+.z-tree-but{
+	width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+/*中国好食品*/
+.activity-pro{
+	width: 400px;
+}
+.activity-pro p{
+	width: 100px;
+	float: left;
+	text-align: left;
+}
+
+/*GFSF会员库*/
+.GFSF-pro>span{
+	display:inline-table;
+}
+.award-box{
+	width: 20%;
+	text-align: center;
+	float: left;
+	padding: 10px 0px;
+}
+/*农豆管理*/
+.beans-goods-h{
+	max-height: 350px;
+	border: 1px solid #cccccc;
+	overflow-y: auto;
+}
+.pro-images{
+	vertical-align: top;
+}
+.pro-images .img-item{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #F2F2F2;
+	margin-bottom: 15px;
+}
+.pro-images .img-item:hover{
+	box-shadow: 0px 0px 5px #F0F0F0;
+}
+.pro-images .img-item img{
+	width: 100%;
+	min-height: 100px;
+}
+.pro-images .img-item:hover .closeImg{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 19px;
+	height: 19px;
+	background: url(../images/icon_error_s.png) no-repeat right bottom;
+	background-size:cover;
+	cursor: pointer;
+	/*display: none;*/
+}
+.pro-images .beans-img-upload{
+	position: relative;
+}
+.pro-images .beans-img-upload input{
+	cursor: pointer;
+}
+/*退货管理*/
+.order-state-r-bg{
+	width: 792px;
+	margin: 0 auto;
+	height: 36px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size:auto;
+}
+.order-state-r-bg.st1{
+	background-image: url(../images/liuchengtu1.png);
+}
+.order-state-r-bg.st2{
+	background-image: url(../images/liuchengtu2.png);
+}
+.order-state-r-bg.st3{
+	background-image: url(../images/liuchengtu3.png);
+}
+.order-state-r-bg.st4{
+	background-image: url(../images/liuchengtu4.png);
+}
+.order-state-r-bg.st5{
+	background-image: url(../images/liuchengtu5.png);
+}
+.order-state-r-title {
+	width: 922px;
+	padding: 15px 0px;
+	margin: 0 auto;
+}
+.order-state-r-title .os-date{
+	float: left;
+	width: 184px;
+    text-align: center;
+}
+
+/*统计*/
+.count-box{
+	width: 90%;
+	height: 550px;
+	margin: 20px auto;
+}
+
+/*圈子*/
+.group-img{
+	width: 90%;
+	height: 150px;
+}
+.bk-green{
+	border: 1px solid #009900;
+}
+.img-del{
+	text-decoration: none;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    font-size: 20px;
+}
+.img-file{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*送礼功能*/
+#gift-order-info td{
+	color: #666666;
+	font-size: 14px;
+}
+
+/*抽奖设置*/
+
+.formControls .w-pre-70{
+	width: 70%;
+}
+.formControls .w-pre-40{
+	width: 40%;
+}
+.formControls .w-pre-50{
+	width: 50%;
+}
+
+/*安全校验*/
+.safety-set{
+	width: 500px;
+	height: 200px;
+	border: 1px solid #F2F2F2;
+	padding: 5px;
+	margin: 0 auto;
+	line-height: 50px;
+}
+.safety-set .row{
+	padding-top: 30px;
+}

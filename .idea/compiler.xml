@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ltxh-core" />
+        <module name="ltxh-demo" />
+        <module name="ltxh-user" />
+        <module name="ltxh-user-api" />
+        <module name="ltxh-web" />
+        <module name="ltxh-worker" />
+        <module name="ltxh-worker-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ltxh-api" target="1.8" />
+      <module name="ltxh-core" target="1.8" />
+      <module name="ltxh-demo" target="1.8" />
+      <module name="ltxh-parent" target="1.8" />
+      <module name="ltxh-user" target="1.8" />
+      <module name="ltxh-user-api" target="1.8" />
+      <module name="ltxh-web" target="1.8" />
+      <module name="ltxh-worker" target="1.8" />
+      <module name="ltxh-worker-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

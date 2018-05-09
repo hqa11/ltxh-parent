@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<!-- package alias of configure -->
+		<!-- 配置model扫描包,自动将包.类定义别名为类名 -->	
+		<package name="com.agc.model"/>
+		<package name="com.agc.dto"/> 
+	</typeAliases>
+	<!-- mapper的配置交给spring更加方便,所以这里就交给他了 -->
+</configuration>

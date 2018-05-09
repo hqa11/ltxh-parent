@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="GBK"?>  
+<!-- 指定Spring配置文件的Schema信息 -->  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xmlns:tx="http://www.springframework.org/schema/tx"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+    http://www.springframework.org/schema/tx   
+    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd  
+    http://www.springframework.org/schema/aop   
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"  
+        default-lazy-init="false">  
+  
+    <!-- 定义<span style="font-family:'courier new','courier';">一</span>个业务逻辑组件，继承业务逻辑组件的模板 -->  
+    <bean id="empManager"  
+        class="com.agc.service.quartz.AutoJobService"/>  
+      
+<!-- 定义触发器来管理任务Bean -->  
+<bean id="cronTriggerPunch"   
+    class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+    <property name="jobDetail">  
+        <!-- 使用嵌套Bean的方式来定义任务Bean -->  
+        <bean  
+        class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+            <!-- 指定任务Bean的实现类 -->  
+            <property name="jobClass"   
+                value="com.agc.utils.quartz.AutoJobUtil"/>  
+            <!-- 为任务Bean注入属性 -->  
+            <property name="jobDataAsMap">  
+                <map>  
+                    <entry key="empMgr" value-ref="empManager"/>  
+                </map>  
+            </property>  
+        </bean>  
+    </property> 
+    
+    <!-- value="0 0/50 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * ?"/> -->
+    
+    <!-- 指定Cron表达式：周一到周五7点、12点执行调度 9,10,11,12,13,14,15,16,17,18,19,--> 
+    <property name="cronExpression"   
+        value="0 0/1 0,1,2,3,4,5,6,7,18,19,20,21,22,23 * * ?"/>
+<!--     <property name="cronExpression"   
+        value="0 0 7,12 ? * MON-FRI"/>   -->
+</bean>  
+<!-- 执行实际的调度器-->  
+<bean   
+class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+    <property name="triggers">  
+        <list>  
+            <ref bean="cronTriggerPunch"></ref>  
+        <!--    <ref local="cronTriggerPunch"/> 两者都可以用 -->  
+        </list>  
+    </property>  
+</bean>  
+</beans>  
